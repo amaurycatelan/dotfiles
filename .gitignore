@@ -14,6 +14,7 @@
 .LSOverride
 .Spotlight-V100
 .Trashes
+.dropbox
 
 # windows
 Thumbs.db
@@ -27,10 +28,23 @@ ehthumbs_vista.db
 *.msp
 
 # --------------------------
-# LOGS CACHE BACKUP
+# LOGS, CACHE, BACKUP
+
+# vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
 
 # vim swp files
 .*.sw[a-p]
+
+# ruby
+.rvmrc
+.ruby-version
+.ruby-gemset
 
 # logs
 logs
