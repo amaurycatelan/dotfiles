@@ -5,14 +5,11 @@ import argparse
 import os
 import sys
 
-
 current = os.path.dirname(os.path.abspath(__file__)) + '/'
 configuration = 'data.json'
 
-
 def warn(msg):
   print '[powerline-bash] ', msg
-
 
 class Powerline:
   symbols = {
@@ -107,7 +104,6 @@ def get_valid_cwd():
     warn("Your current directory is invalid. Lowest valid directory: " + up)
   return cwd
 
-
 if __name__ == "__main__":
   arg_parser = argparse.ArgumentParser()
   arg_parser.add_argument('--cwd-only', action='store_true',
@@ -126,7 +122,6 @@ if __name__ == "__main__":
   args = arg_parser.parse_args()
 
   powerline = Powerline(args, get_valid_cwd())
-
 
 class DefaultColor:
   """
@@ -180,7 +175,6 @@ class Color(DefaultColor):
   """
   pass
 
-
 class Color(DefaultColor):
   USERNAME_FG = 15
   USERNAME_BG = 4
@@ -217,8 +211,6 @@ class Color(DefaultColor):
   VIRTUAL_ENV_BG = 15
   VIRTUAL_ENV_FG = 2
 
-
-
 def add_username_segment():
   import os
   import json
@@ -249,7 +241,6 @@ def add_username_segment():
 
 add_username_segment()
 
-
 import os
 
 def add_ssh_segment():
@@ -258,7 +249,6 @@ def add_ssh_segment():
       powerline.append(' %s ' % powerline.network, Color.SSH_FG, Color.SSH_BG)
 
 add_ssh_segment()
-
 
 import os
 
@@ -298,7 +288,6 @@ def add_cwd_segment():
 
 add_cwd_segment()
 
-
 import os
 
 def add_read_only_segment():
@@ -308,7 +297,6 @@ def add_read_only_segment():
     powerline.append(' %s ' % powerline.lock, Color.READONLY_FG, Color.READONLY_BG)
 
 add_read_only_segment()
-
 
 import re
 import subprocess
@@ -336,7 +324,6 @@ def get_git_status():
     if line.find('Untracked files') >= 0:
       has_untracked_files = True
   return has_pending_commits, has_untracked_files, origin_position
-
 
 def add_git_segment():
   # See http://git-blame.blogspot.com/2013/06/checking-current-branch-programatically.html
@@ -411,7 +398,6 @@ def add_hg_segment():
 
 add_hg_segment()
 
-
 import subprocess
 
 def add_svn_segment():
@@ -434,7 +420,6 @@ except OSError:
   pass
 except subprocess.CalledProcessError:
   pass
-
 
 import os
 import subprocess
@@ -478,7 +463,6 @@ except OSError:
 except subprocess.CalledProcessError:
   pass
 
-
 import os
 import re
 import subprocess
@@ -492,7 +476,6 @@ def add_jobs_segment():
     powerline.append(' %d ' % num_jobs, Color.JOBS_FG, Color.JOBS_BG)
 
 add_jobs_segment()
-
 
 def add_root_indicator_segment():
   root_indicators = {
@@ -508,6 +491,5 @@ def add_root_indicator_segment():
   powerline.append(root_indicators[powerline.args.shell], fg, bg)
 
 add_root_indicator_segment()
-
 
 sys.stdout.write(powerline.draw())
