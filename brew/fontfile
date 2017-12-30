@@ -1,0 +1,22 @@
+# --------------------------
+
+# --------------------------
+# general fonts
+font-droid-sans
+font-lato
+font-open-sans
+font-pt-sans
+font-roboto
+font-source-sans-pro
+
+# --------------------------
+# programming fonts
+font-fira-code
+font-meslo-lg
+font-meslo-for-powerline
+font-hack
+font-inconsolata
+font-office-code-pro
+font-source-code-pro
+
+# --------------------------
