@@ -8,8 +8,8 @@ findutils
 glib
 ack
 
-# app store command line
 # --------------------------
+# app store command line
 mas
 
 # --------------------------
