@@ -1,0 +1,110 @@
+# --------------------------
+
+# --------------------------
+# general
+coreutils
+moreutils
+findutils
+glib
+ack
+
+# app store command line
+# --------------------------
+mas
+
+# --------------------------
+# common
+git
+tree
+
+# --------------------------
+# network
+curl --with-ssl --with-libssh2
+wget --with-iri
+httpie
+wget
+adns
+hostess
+transmission
+
+# --------------------------
+# database
+sqlite
+mysql
+
+# --------------------------
+# python
+python
+python3
+
+# --------------------------
+# php
+php56
+composer
+
+# --------------------------
+# node
+nvm
+yarn
+
+# --------------------------
+# golang
+goenv
+
+# --------------------------
+# fonts
+fontconfig
+freetype
+
+# --------------------------
+# images
+imagemagick --with-webp
+webp
+webkit2png
+
+# --------------------------
+# video
+x264
+x265
+ffmpeg
+youtube-dl
+
+# --------------------------
+# docker
+xhyve
+docker
+docker-compose
+docker-machine
+docker-machine-driver-xhyve
+
+# --------------------------
+# zsh
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
+
+# --------------------------
+# fuzzy finder
+fzf
+
+# --------------------------
+# backup settings
+mackup
+
+# --------------------------
+# wine
+wine
+winetricks
+
+# --------------------------
+# extract
+cabextract
+unrar
+
+# --------------------------
+# others
+rename
+sudolikeaboss
+texi2html
+
+# --------------------------
