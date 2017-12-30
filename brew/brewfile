@@ -25,7 +25,6 @@ httpie
 wget
 adns
 hostess
-transmission
 
 # --------------------------
 # database
