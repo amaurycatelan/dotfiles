@@ -1,0 +1,91 @@
+# --------------------------
+
+# --------------------------
+# general
+appcleaner
+macs-fan-control
+onyx
+ukelele
+unetbootin
+
+# --------------------------
+# browsers
+firefox
+firefoxdeveloperedition
+google-chrome
+google-chrome-canary
+safari-technology-preview
+
+# --------------------------
+# backup and sync
+amazon-drive
+dropbox
+google-backup-and-sync
+
+# --------------------------
+# productivity tools
+anki
+evernote
+itsycal
+keepingyouawake
+spectacle
+typora
+
+# --------------------------
+# development
+filezilla
+google-web-designer
+imagealpha
+imageoptim
+impactor
+iterm2
+mysqlworkbench
+postman
+skyfonts
+sourcetree
+sublime-text
+virtualbox
+visual-studio-code
+
+# --------------------------
+# compressor
+keka
+the-unarchiver
+
+# --------------------------
+# communication
+slack
+skype
+telegram-desktop
+
+# --------------------------
+# multimedia
+spotify
+handbrake
+handbrakecli
+vlc
+
+# --------------------------
+# quickLook plugins
+qlcolorcode
+qlmarkdown
+webpquicklook
+
+# --------------------------
+# network
+progressive-downloader
+transmission
+webtorrent
+wireshark
+
+# --------------------------
+# games
+steam
+openemu
+
+# --------------------------
+# wine
+winebottler
+wineskin-winery
+
+# --------------------------
