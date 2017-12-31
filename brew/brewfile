@@ -5,6 +5,7 @@
 coreutils
 moreutils
 findutils
+oath-toolkit
 glib
 ack
 
