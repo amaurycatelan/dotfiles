@@ -5,7 +5,7 @@
 
 # personal settings
 alias gc="python ${gdrive}/root/projects/lab/git-helper/gclone.py"
-alias wn="sh ${gdrive}/root/projects/lab/typewriter/numbers.sh"
+alias wn="sh ${gdrive}/root/projects/lab/typewriter/main.sh"
 
 # directory navigation
 alias cl="clear"
