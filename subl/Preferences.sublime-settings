@@ -1,0 +1,115 @@
+{
+
+  // --------------------------
+
+  // coding standards
+  // --------------------------
+
+  "font_size": 20,
+  "font_face": "Klavika",
+  "font_options": ["subpixel_antialias"],
+
+  "tabs_small": true,
+  "word_wrap": true,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "highlight_modified_tabs": true,
+  "indent_guide_options": ["draw_normal", "draw_active"],
+
+  "caret_extra_bottom": 0,
+  "caret_extra_top": 0,
+  "caret_extra_width": 0,
+  "caret_style": "phase",
+  "wide_caret": true,
+
+  "trim_trailing_white_space_on_save": true,
+  "default_line_ending": "unix",
+
+  "rulers": [80],
+  "enable_live_count": true,
+  "close_windows_when_empty": false,
+  "overlay_scroll_bars": "enabled",
+  "always_show_minimap_viewport": true,
+
+  // theme
+  // --------------------------
+
+  "color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+  "theme": "Material-Theme-Darker.sublime-theme",
+
+  // options
+  // --------------------------
+
+  "line_padding_bottom": 2,
+  "line_padding_top": 2,
+  "bold_folder_labels": true,
+  "overlay_scroll_bars": "enabled",
+  "remember_open_files": true,
+  "show_encoding": true,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
+  "draw_minimap_border": true,
+  "draw_white_space": "all",
+  "use_simple_full_screen": true,
+  "hot_exit": true,
+  "update_check": false,
+
+  // exclude and ignore
+  // --------------------------
+
+  "file_exclude_patterns":
+  [
+    "*.pyc",
+    "*.pyo",
+    "*.exe",
+    "*.dll",
+    "*.obj",
+    "*.o",
+    "*.a",
+    "*.lib",
+    "*.so",
+    "*.dylib",
+    "*.ncb",
+    "*.sdf",
+    "*.suo",
+    "*.pdb",
+    "*.idb",
+    "*.class",
+    "*.psd",
+    "*.db",
+    ".DS_Store",
+    "*.sublime-workspace"
+  ],
+
+  "folder_exclude_patterns":
+  [
+    "node_modules",
+    ".svn",
+    ".git",
+    ".hg",
+    "CVS"
+  ],
+
+  "binary_file_patterns":
+  [
+    "generated/*",
+    "*.tbz2",
+    "*.gzip",
+    "*.jpg",
+    "*.jpeg",
+    "*.png",
+    "*.gif",
+    "*.ttf",
+    "*.tga",
+    "*.dds",
+    "*.ico",
+    "*.eot",
+    "*.pdf",
+    "*.swf",
+    "*.jar",
+    "*.zip"
+  ],
+
+  // --------------------------
+
+}
