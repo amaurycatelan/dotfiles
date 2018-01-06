@@ -1,5 +1,6 @@
 {
   "installed_packages": [
+    "A File Icon",
     "AdvancedNewFile",
     "All Autocomplete",
     "AutoFileName",
@@ -7,12 +8,11 @@
     "Babel",
     "Bracketeer",
     "BracketHighlighter",
-    "BufferScroll",
     "Can I Use",
     "Color Highlighter",
     "ColorPicker",
-    "Diff",
     "Emmet",
+    "File​Diffs",
     "Git",
     "GitGutter",
     "GhostText",
@@ -20,6 +20,7 @@
     "Markdown Extended",
     "Markdown Preview",
     "MarkdownEditing",
+    "Material Theme",
     "Modific",
     "Origami",
     "Package Control",
@@ -30,7 +31,6 @@
     "SublimeLinter",
     "SublimeLinter-contrib-eslint",
     "SublimeLinter-contrib-standard",
-    "Theme - Material Theme",
     "ToggleMinimapOnScroll",
     "WordCount",
   ]
