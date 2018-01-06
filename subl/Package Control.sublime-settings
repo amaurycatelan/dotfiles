@@ -29,6 +29,7 @@
     "SublimeLinter",
     "SublimeLinter-contrib-eslint",
     "SublimeLinter-contrib-standard",
+    "TrailingSpaces",
     "ToggleMinimapOnScroll",
     "WordCount",
   ]
