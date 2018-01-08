@@ -37,6 +37,11 @@ sqlite
 mysql
 
 # --------------------------
+# code search
+the_silver_searcher
+ripgrep
+
+# --------------------------
 # python
 python
 python3
