@@ -87,6 +87,10 @@ docker-machine
 docker-machine-driver-xhyve
 
 # --------------------------
+# static site generators
+hugo
+
+# --------------------------
 # zsh
 zsh
 zsh-autosuggestions
