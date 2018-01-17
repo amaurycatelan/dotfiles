@@ -92,6 +92,11 @@ alias load-nvm=load-nvm
 
 # --------------------------
 
+# SHELL disable hidden ._ files in archives
+# --------------------------
+
+export COPYFILE_DISABLE=true
+
 # Extend (Shell) ,,
 # --------------------------
 
