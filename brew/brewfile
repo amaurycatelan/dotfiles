@@ -32,6 +32,12 @@ adns
 hostess
 
 # --------------------------
+# terminal
+ex-vi
+vim
+neovim
+
+# --------------------------
 # database
 sqlite
 mysql
