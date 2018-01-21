@@ -97,6 +97,13 @@ alias load-nvm=load-nvm
 
 export COPYFILE_DISABLE=true
 
+# ZSH fix: pasting commands from clipboard are slow
+# --------------------------
+
+if [ -n "$ZSH_VERSION" ]; then
+  zstyle ':bracketed-paste-magic' active-widgets '.self-*'
+fi
+
 # Extend (Shell) ,,
 # --------------------------
 
