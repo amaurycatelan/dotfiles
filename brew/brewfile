@@ -36,6 +36,7 @@ hostess
 ex-vi
 vim
 neovim
+tmux
 
 # --------------------------
 # database
