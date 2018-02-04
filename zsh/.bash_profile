@@ -30,6 +30,7 @@ fi
 # --------------------------
 
 if [ -n "$ZSH_VERSION" ]; then
+
   setopt APPEND_HISTORY HIST_IGNORE_ALL_DUPS HIST_IGNORE_SPACE HIST_REDUCE_BLANKS AUTO_CD BSD_ECHO PROMPT_SUBST
   setopt append_history
   setopt inc_append_history
@@ -42,54 +43,53 @@ if [ -n "$ZSH_VERSION" ]; then
   setopt hist_no_functions
   setopt no_hist_beep
   setopt hist_save_no_dups
-fi
 
-HISTSIZE=300
-SAVEHIST=300
-HISTFILE=${gdrive}/"root/settings/history"/.zsh_history
+  HISTSIZE=300
+  SAVEHIST=300
+  HISTFILE=${gdrive}/"root/settings/history"/.zsh_history
 
-# HISTORIC (script for backup history)
-# --------------------------
+  # HISTORIC (script for backup history)
+  # --------------------------
 
-HISTORIC_PATH=${gdrive}/"root/settings/history/backup"/
-HISTORIC_NAME=".history-"$(date +%Y%m)
-HISTORIC_FILE=${HISTORIC_PATH}${HISTORIC_NAME}
-HISTORIC_FIND=$(find $HISTORIC_PATH -name '.history-*' -type f | tail -1)
+  HISTORIC_PATH=${gdrive}/"root/settings/history/backup"/
+  HISTORIC_NAME=".history-"$(date +%Y%m)
+  HISTORIC_FILE=${HISTORIC_PATH}${HISTORIC_NAME}
+  HISTORIC_FIND=$(find $HISTORIC_PATH -name '.history-*' -type f | tail -1)
 
-historic_write() {
+  historic_write() {
+    historic_stamp=$(tail -1 $HISTORIC_FIND | cut -c 1-13 | grep -o -E '[0-9]+')
+    historic_linenumber=$(grep -n "^: $historic_stamp" $HISTFILE | head -1 | grep -Eo '^[^:]+')
 
-  historic_stamp=$(tail -1 $HISTORIC_FIND | cut -c 1-13 | grep -o -E '[0-9]+')
-  historic_linenumber=$(grep -n "^: $historic_stamp" $HISTFILE | head -1 | grep -Eo '^[^:]+')
-
-  if [ $1 = "append" ]; then
-    sed -n ''$historic_linenumber',$p' $HISTFILE >> $HISTORIC_FILE
-  else
-    sed -n ''$historic_linenumber',$p' $HISTFILE > $HISTORIC_FILE
-  fi
-
-}
-
-historic_fill() {
-  mkdir -p $HISTORIC_PATH
-  cat $HISTFILE > $HISTORIC_FILE
-}
-
-if [ ! -f "$HISTORIC_FILE" ]; then
-
-  if [ ! -d "$HISTORIC_PATH" ]; then
-    historic_fill
-  else
-
-    if [ $HISTORIC_FIND ]; then
-      historic_write
+    if [ $1 = "append" ]; then
+      sed -n ''$historic_linenumber',$p' $HISTFILE >> $HISTORIC_FILE
     else
+      sed -n ''$historic_linenumber',$p' $HISTFILE > $HISTORIC_FILE
+    fi
+  }
+
+  historic_fill() {
+    mkdir -p $HISTORIC_PATH
+    cat $HISTFILE > $HISTORIC_FILE
+  }
+
+  if [ ! -f "$HISTORIC_FILE" ]; then
+
+    if [ ! -d "$HISTORIC_PATH" ]; then
       historic_fill
+    else
+
+      if [ $HISTORIC_FIND ]; then
+        historic_write
+      else
+        historic_fill
+      fi
+
     fi
 
+  else
+    historic_write "append"
   fi
 
-else
-  historic_write "append"
 fi
 
 # ZSH (Auto Suggestions, Syntax Highlighting) ,,
