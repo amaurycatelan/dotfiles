@@ -57,7 +57,7 @@ alias spotoff="sudo mdutil -a -i off"
 alias spoton="sudo mdutil -a -i on"
 
 # empty the Trash
-alias emptytrash "rm -rfv ~/.Trash"
+alias emptytrash="rm -rfv ~/.Trash"
 
 # network
 alias my-ip="dig +short myip.opendns.com @resolver1.opendns.com"
