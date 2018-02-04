@@ -11,6 +11,13 @@ export ZSH=$HOME/.oh-my-zsh
 # ZSH_THEME="cobalt2"
 # ZSH_THEME="powerlevel9k/powerlevel9k"
 
+# Set list of themes to load
+# Setting this variable when ZSH_THEME=random
+# cause zsh load theme from this variable instead of
+# looking in ~/.oh-my-zsh/themes/
+# An empty array have no effect
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -53,9 +60,9 @@ export ZSH=$HOME/.oh-my-zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-# plugins=(git)
-
-# source $ZSH/oh-my-zsh.sh
+plugins=(
+  git
+)
 
 # User configuration
 
