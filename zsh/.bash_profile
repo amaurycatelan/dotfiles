@@ -148,7 +148,7 @@ fi
 # Extend (Shell) ,,
 # --------------------------
 
-for extend (${dotfiles}/zsh/utils/*.sh(N)); do
+for extend in ${dotfiles}/zsh/utils/*.sh; do
   if [ -f $extend ]; then
     source $extend
   fi
