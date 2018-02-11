@@ -58,7 +58,7 @@ if [ -n "$ZSH_VERSION" ]; then
 
   historic_write() {
     historic_stamp=$(tail -1 $HISTORIC_FIND | cut -c 1-13 | grep -o -E '[0-9]+')
-    historic_linenumber=$(grep -n "^: $historic_stamp" $HISTFILE | head -1 | grep -Eo '^[^:]+')
+    historic_linenumber=$(grep -n "^: $historic_stamp" $HISTFILE | head -1 | grep -Eo '^[^:]+' | awk '{ print $1+1 }')
 
     if [ $1 = "append" ]; then
       sed -n ''$historic_linenumber',$p' $HISTFILE >> $HISTORIC_FILE
