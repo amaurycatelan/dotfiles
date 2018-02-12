@@ -48,13 +48,14 @@ if [ -n "$ZSH_VERSION" ]; then
   SAVEHIST=300
   HISTFILE=${gdrive}/"root/settings/history"/.zsh_history
 
+  # --------------------------
   # HISTORIC (script for backup history)
   # --------------------------
 
   HISTORIC_PATH=${gdrive}/"root/settings/history/backup"/
-  HISTORIC_NAME=".history-"$(date +%Y%m)
-  HISTORIC_FILE=${HISTORIC_PATH}${HISTORIC_NAME}
-  HISTORIC_FIND=$(find $HISTORIC_PATH -name '.history-*' -type f | tail -1)
+  HISTORIC_NAME=".history-"
+  HISTORIC_FILE=${HISTORIC_PATH}${HISTORIC_NAME}$(date +%Y%m)
+  HISTORIC_FIND=$(find $HISTORIC_PATH -name ${HISTORIC_NAME}'*' -type f | tail -1)
 
   historic_write() {
     historic_stamp=$(tail -1 $HISTORIC_FIND | cut -c 1-13 | grep -o -E '[0-9]+')
@@ -73,7 +74,7 @@ if [ -n "$ZSH_VERSION" ]; then
   }
 
   historic() {
-    cat $( find $HISTORIC_PATH -name '.history-*' ) | grep --color=always "$*"
+    cat $( find $HISTORIC_PATH -name ${HISTORIC_NAME}'*' ) | grep --color=always "$*"
   }
 
   if [ ! -f "$HISTORIC_FILE" ]; then
