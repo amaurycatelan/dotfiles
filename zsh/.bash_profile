@@ -72,6 +72,10 @@ if [ -n "$ZSH_VERSION" ]; then
     cat $HISTFILE > $HISTORIC_FILE
   }
 
+  historic() {
+    cat $( find $HISTORIC_PATH -name '.history-*' ) | grep --color=always "$*"
+  }
+
   if [ ! -f "$HISTORIC_FILE" ]; then
 
     if [ ! -d "$HISTORIC_PATH" ]; then
