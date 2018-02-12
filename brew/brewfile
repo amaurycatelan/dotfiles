@@ -79,6 +79,7 @@ freetype
 imagemagick --with-webp
 webp
 webkit2png
+gifsicle
 
 # --------------------------
 # video
