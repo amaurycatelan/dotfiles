@@ -156,4 +156,19 @@ done
 
 unset extend
 
+# Plugins (Zshell) ,,
+# --------------------------
+
+if [ -n "$ZSH_VERSION" ]; then
+
+  for extend in ${dotfiles}/zsh/plugins/*.zsh; do
+    if [ -f $extend ]; then
+      source $extend
+    fi
+  done
+
+  unset extend
+
+fi
+
 # --------------------------
