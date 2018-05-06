@@ -43,6 +43,7 @@ tmux
 # database
 sqlite
 mysql
+postgres
 mongodb
 
 # --------------------------
