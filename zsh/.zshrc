@@ -17,3 +17,7 @@ source $ZSH/oh-my-zsh.sh
 # load cached file
 # --------------------------
 cache_shell "zsh"
+
+# fuzzy finder
+# --------------------------
+source $HOME/.fzf.zsh
