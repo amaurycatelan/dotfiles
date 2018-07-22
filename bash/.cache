@@ -1,0 +1,32 @@
+# --------------------------
+
+# CACHE ZSH/BASH
+# save load multiple zsh/bash files
+# --------------------------
+# --------------------------
+
+export __SEARCH_SHELL=$(
+  find $DOTFILES -type f \( -name "*.sh" -or -name "*.zsh" \) -print0 | \
+  xargs -0 gstat --format '%Y :%y %n'
+)
+
+load_shell() {
+
+  CACHE=".$1.cache"
+  [ ! -f $DOTFILES/$CACHE ] && echo > $DOTFILES/$CACHE
+
+  HASH=\#$(echo -n $__SEARCH_SHELL | grep "\.$1$" | md5)
+  FILES=(`echo -n $__SEARCH_SHELL | grep "\.$1$" | awk '{print $5, "<(echo) "}'`)
+  CHECK=$(tail -n 1 $DOTFILES/$CACHE)
+
+  if [ "$CHECK" != "$HASH" ]; then
+    eval cat $FILES > $DOTFILES/$CACHE
+    echo -n $HASH >> $DOTFILES/$CACHE
+    source $DOTFILES/$CACHE
+  else
+    source $DOTFILES/$CACHE
+  fi
+
+}
+
+# --------------------------
