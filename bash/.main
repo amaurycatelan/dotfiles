@@ -16,3 +16,13 @@ export DOTFILES="${HOME}/.dotfiles"
 # gdrive
 # --------------------------
 export GDRIVE="${HOME}/gdrive"
+
+# common sources
+# --------------------------
+# --------------------------
+
+# cache files
+# --------------------------
+source ${DOTFILES}/bash/.cache
+
+# --------------------------
