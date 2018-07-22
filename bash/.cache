@@ -10,7 +10,7 @@ export __SEARCH_SHELL=$(
   xargs -0 gstat --format '%Y :%y %n'
 )
 
-load_shell() {
+cache_shell() {
 
   CACHE=".$1.cache"
   [ ! -f $DOTFILES/$CACHE ] && echo > $DOTFILES/$CACHE
