@@ -16,6 +16,7 @@ source $ZSH/oh-my-zsh.sh
 
 # load cached file
 # --------------------------
+cache_shell "sh"
 cache_shell "zsh"
 
 # zsh settings
