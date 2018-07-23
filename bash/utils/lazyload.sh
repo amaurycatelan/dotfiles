@@ -14,3 +14,15 @@ function load-goenv() {
 }
 
 alias load-goenv=load-goenv
+
+# NVM (Node) ,,
+# --------------------------
+
+function load-nvm() {
+  export NVM_DIR="$HOME/.nvm"
+  source $(brew --prefix nvm)/nvm.sh
+}
+
+alias load-nvm=load-nvm
+
+# --------------------------
