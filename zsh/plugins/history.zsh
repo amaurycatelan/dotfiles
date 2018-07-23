@@ -18,14 +18,14 @@ setopt hist_save_no_dups
 
 HISTSIZE=300
 SAVEHIST=300
-HISTFILE="${gdrive}/root/settings/history/.zsh_history"
+HISTFILE="${GDRIVE}/root/settings/history/.zsh_history"
 
 # HISTORIC
 # script for backup zsh history
 # --------------------------
 # --------------------------
 
-HISTORIC_PATH="${gdrive}/root/settings/history/backup/"
+HISTORIC_PATH="${GDRIVE}/root/settings/history/backup/"
 HISTORIC_NAME=".history-"
 HISTORIC_FILE=${HISTORIC_PATH}${HISTORIC_NAME}$(date +%Y%m)
 HISTORIC_FIND=$(find $HISTORIC_PATH -name ${HISTORIC_NAME}'*' -type f | tail -1)
