@@ -1,0 +1,13 @@
+# --------------------------
+
+# SHELL disable hidden files (._) in archives
+# --------------------------
+
+export COPYFILE_DISABLE=true
+
+# ZSH fix: pasting commands from clipboard are slow
+# --------------------------
+
+zstyle ':bracketed-paste-magic' active-widgets '.self-*'
+
+# --------------------------
