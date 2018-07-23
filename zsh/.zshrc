@@ -18,6 +18,10 @@ source $ZSH/oh-my-zsh.sh
 # --------------------------
 cache_shell "zsh"
 
+# zsh settings
+# --------------------------
+source ${HOME}/dotfiles/zsh/.settings
+
 # fuzzy finder
 # --------------------------
 source $HOME/.fzf.zsh
