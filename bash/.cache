@@ -15,12 +15,12 @@ cache_shell() {
   CACHE=".$1.cache"
   [ ! -f $DOTFILES/$CACHE ] && echo > $DOTFILES/$CACHE
 
-  HASH=\#$(echo -n $__SEARCH_SHELL | grep "\.$1$" | md5)
-  FILES=(`echo -n $__SEARCH_SHELL | grep "\.$1$" | awk '{print $5, "<(echo) "}'`)
+  HASH=\#$(echo -n "$__SEARCH_SHELL" | grep "\.$1$" | md5)
+  FILES=$(echo -n "$__SEARCH_SHELL" | grep "\.$1$" | awk '{print $5, "<(echo) "}')
   CHECK=$(tail -n 1 $DOTFILES/$CACHE)
 
   if [ "$CHECK" != "$HASH" ]; then
-    eval cat $FILES > $DOTFILES/$CACHE
+    eval cat $(echo $FILES) > $DOTFILES/$CACHE
     echo -n $HASH >> $DOTFILES/$CACHE
     source $DOTFILES/$CACHE
   else
