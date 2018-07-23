@@ -11,7 +11,7 @@ export LANG=en_US.UTF-8
 
 # dotfiles
 # --------------------------
-export DOTFILES="${HOME}/.dotfiles"
+export DOTFILES="${HOME}/dotfiles"
 
 # gdrive
 # --------------------------
