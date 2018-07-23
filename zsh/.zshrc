@@ -10,6 +10,10 @@ source ${HOME}/dotfiles/bash/.main
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# zsh settings
+# --------------------------
+source ${HOME}/dotfiles/zsh/.settings
+
 # oh-my-zsh
 # --------------------------
 source $ZSH/oh-my-zsh.sh
@@ -18,10 +22,6 @@ source $ZSH/oh-my-zsh.sh
 # --------------------------
 cache_shell "sh"
 cache_shell "zsh"
-
-# zsh settings
-# --------------------------
-source ${HOME}/dotfiles/zsh/.settings
 
 # fuzzy finder
 # --------------------------

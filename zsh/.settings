@@ -1,13 +1,13 @@
 # --------------------------
 
-# SHELL disable hidden files (._) in archives
-# --------------------------
+# zsh theme and plugins
+ZSH_THEME="neo-agnoster"
+plugins=(git)
 
-export COPYFILE_DISABLE=true
-
-# ZSH fix: pasting commands from clipboard are slow
-# --------------------------
-
+# zsh fix: pasting commands from clipboard are slow
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
+
+# disable hidden files (._) in archives
+export COPYFILE_DISABLE=true
 
 # --------------------------
