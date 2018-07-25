@@ -1,6 +1,7 @@
 # --------------------------
 
-# zsh hitory options
+# zsh history options
+# --------------------------
 # --------------------------
 
 setopt APPEND_HISTORY HIST_IGNORE_ALL_DUPS HIST_IGNORE_SPACE HIST_REDUCE_BLANKS AUTO_CD BSD_ECHO PROMPT_SUBST
@@ -16,21 +17,25 @@ setopt hist_no_functions
 setopt no_hist_beep
 setopt hist_save_no_dups
 
-HISTSIZE=300
-SAVEHIST=300
-HISTFILE="${GDRIVE}/root/settings/history/.zsh_history"
-
 # search-backward (alt + r)
 # --------------------------
 bindkey '^[r' history-incremental-pattern-search-backward
+
+# zsh history main paths
+# --------------------------
+HISTSIZE=300
+SAVEHIST=300
+
+HISTPATH="${GDRIVE}/root/settings/zsh-history"
+HISTFILE="${HISTPATH}/.zsh_history"
+HISTORIC_PATH="${HISTPATH}/backup/"
+HISTORIC_NAME=".history-"
 
 # HISTORIC
 # script for backup zsh history
 # --------------------------
 # --------------------------
 
-HISTORIC_PATH="${GDRIVE}/root/settings/history/backup/"
-HISTORIC_NAME=".history-"
 HISTORIC_FILE=${HISTORIC_PATH}${HISTORIC_NAME}$(date +%Y%m)
 HISTORIC_FIND=$(find $HISTORIC_PATH -name ${HISTORIC_NAME}'*' -type f | tail -1)
 HISTORIC_FILL=5
