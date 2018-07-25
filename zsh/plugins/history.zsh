@@ -70,8 +70,7 @@ fzf-historic() {
   if [ "$(fzf --version)" ] ; then
     local selected num
     setopt localoptions noglobsubst noposixbuiltins pipefail 2> /dev/null
-    selected=( $( cat $( find $HISTORIC_PATH -name ${HISTORIC_NAME}'*' ) |
-      FZF_DEFAULT_OPTS="--height ${FZF_TMUX_HEIGHT:-40%} $FZF_DEFAULT_OPTS -n2..,.. --tiebreak=index --bind=ctrl-r:toggle-sort $FZF_CTRL_R_OPTS --query=${(qqq)LBUFFER} +m" $(__fzfcmd)) )
+    selected=( $( cat $( find $HISTORIC_PATH -name ${HISTORIC_NAME}'*' ) | tail -r | fzf --height 40% --hscroll-off 100 ) )
     local ret=$?
     if [ -n "$selected" ]; then
       num=$selected[1]
