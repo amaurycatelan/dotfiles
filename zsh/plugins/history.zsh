@@ -70,7 +70,7 @@ fzf-historic() {
   if [ "$(fzf --version)" ] ; then
     local selected num
     setopt localoptions noglobsubst noposixbuiltins pipefail 2> /dev/null
-    selected=( $( cat $( find $HISTORIC_PATH -name ${HISTORIC_NAME}'*' ) | tail -r | fzf --height 40% --hscroll-off 100 ) )
+    selected=( $( cat $( find $HISTORIC_PATH -name ${HISTORIC_NAME}'*' ) | tail -r | fzf --height 40% ) )
     local ret=$?
     if [ -n "$selected" ]; then
       num=$selected[1]
