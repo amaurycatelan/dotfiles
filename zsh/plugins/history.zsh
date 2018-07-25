@@ -59,7 +59,7 @@ fi
 historic() {
   if [ "$(fzf --version)" ] ; then
     cat $( find $HISTORIC_PATH -name ${HISTORIC_NAME}'*' ) | \
-    fzf --height 40% --reverse | cut -c 16- | pbcopy | </dev/null
+    fzf --height 40% | cut -c 16- | pbcopy | </dev/null
   else
     cat $( find $HISTORIC_PATH -name ${HISTORIC_NAME}'*' ) | \
     grep --color=always "$*"
