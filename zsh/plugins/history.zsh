@@ -20,6 +20,10 @@ HISTSIZE=300
 SAVEHIST=300
 HISTFILE="${GDRIVE}/root/settings/history/.zsh_history"
 
+# search-backward (alt + r)
+# --------------------------
+bindkey '^[r' history-incremental-pattern-search-backward
+
 # HISTORIC
 # script for backup zsh history
 # --------------------------
