@@ -1,0 +1,9 @@
+# --------------------------
+
+# bash history
+# --------------------------
+
+HISTFILESIZE=1000000
+HISTSIZE=1000000
+HISTTIMEFORMAT="%d/%m/%y %T "
+HISTFILE="${HISTPATH}/bash-history/.bash_history"
