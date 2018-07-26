@@ -5,6 +5,10 @@
 # --------------------------
 source ${HOME}/dotfiles/bash/.main
 
+# bash settings
+# --------------------------
+source ${HOME}/dotfiles/bash/.settings
+
 # load cached file
 # --------------------------
 cache_shell "sh"

@@ -26,9 +26,8 @@ bindkey '^[r' history-incremental-pattern-search-backward
 HISTSIZE=300
 SAVEHIST=300
 
-HISTPATH="${GDRIVE}/root/settings/zsh-history"
-HISTFILE="${HISTPATH}/.zsh_history"
-HISTORIC_PATH="${HISTPATH}/backup/"
+HISTFILE="${HISTPATH}/zsh-history/.zsh_history"
+HISTORIC_PATH="${HISTPATH}/zsh-history/backup/"
 HISTORIC_NAME=".history-"
 
 # HISTORIC

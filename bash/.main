@@ -17,6 +17,10 @@ export DOTFILES="${HOME}/dotfiles"
 # --------------------------
 export GDRIVE="${HOME}/gdrive"
 
+# history path
+# --------------------------
+export HISTPATH="${GDRIVE}/root/storage/macos/shell"
+
 # zsh and .oh-my-zsh
 # --------------------------
 export ZSH="$HOME/.oh-my-zsh"
