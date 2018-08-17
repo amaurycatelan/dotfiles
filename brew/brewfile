@@ -6,6 +6,7 @@ coreutils
 moreutils
 findutils
 oath-toolkit
+make
 openssl
 exiftool
 gpg
