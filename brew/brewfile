@@ -124,7 +124,8 @@ wine
 winetricks
 
 # --------------------------
-# extract
+# compress and extract
+rar
 cabextract
 unrar
 
