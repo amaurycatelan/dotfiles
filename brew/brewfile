@@ -34,7 +34,7 @@ adns
 hostess
 
 # --------------------------
-# terminal
+# terminal text editor
 ex-vi
 vim
 neovim
