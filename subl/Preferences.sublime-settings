@@ -37,6 +37,22 @@
   "color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
   "theme": "Material-Theme-Darker.sublime-theme",
 
+  // downloader
+  // --------------------------
+
+  "downloader_precedence": {
+    "linux": [
+      "curl",
+      "wget",
+      "urllib"
+    ],
+    "osx": [
+      "curl",
+      "urllib"
+    ],
+    "windows": ["wininet"]
+  },
+
   // options
   // --------------------------
 
