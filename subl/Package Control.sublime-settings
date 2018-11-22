@@ -1,5 +1,12 @@
 {
-  "installed_packages": [
+  "bootstrapped": true,
+  "in_process_packages":
+  [
+    "Markdown Preview",
+    "SublimeLinter-contrib-eslint"
+  ],
+  "installed_packages":
+  [
     "A File Icon",
     "AdvancedNewFile",
     "All Autocomplete",
@@ -11,26 +18,27 @@
     "Can I Use",
     "Color Highlighter",
     "ColorPicker",
+    "DA UI",
     "Emmet",
+    "GhostText",
     "Git",
     "GitGutter",
-    "GhostText",
     "LoremIpsum",
     "Markdown Extended",
-    "Markdown Preview",
-    "MarkdownEditing",
     "Material Theme",
     "Modific",
     "Origami",
     "Package Control",
     "Pretty JSON",
     "SideBarEnhancements",
+    "Stylus",
     "SublimeCodeIntel",
     "SublimeLinter",
-    "SublimeLinter-contrib-eslint",
     "SublimeLinter-contrib-standard",
-    "TrailingSpaces",
+    "SublimeLinter-eslint",
+    "Terminal",
     "ToggleMinimapOnScroll",
-    "WordCount",
+    "TrailingSpaces",
+    "WordCount"
   ]
 }

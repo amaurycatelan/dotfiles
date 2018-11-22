@@ -34,8 +34,9 @@
   // theme
   // --------------------------
 
-  "color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
-  "theme": "Material-Theme-Darker.sublime-theme",
+  "color_scheme": "Packages/Material Theme/schemes/Material-Theme-Palenight.tmTheme",
+  "theme": "DA.sublime-theme",
+  "skin": "DA UI/Elegant",
 
   // downloader
   // --------------------------
