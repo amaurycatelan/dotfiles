@@ -9,7 +9,7 @@ __sublime() {
   local build=3176
   local application="/Applications/Sublime Text.app"
   local settings="${HOME}/Library/Application Support/Sublime Text 3/Packages/User"
-  local dotfiles="${HOME}/dotfiles/subl/"
+  local dotfiles="${HOME}/dotfiles/sublime/"
 
   local files=(
     "Preferences.sublime-settings"
