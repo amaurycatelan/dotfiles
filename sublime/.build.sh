@@ -22,10 +22,10 @@ __sublime() {
 
   local copy() {
 
-    i=0
+    local i=0
 
     for item in $files; do
-      command=(${dotfiles}${item} ${settings})
+      local command=(${dotfiles}${item} ${settings})
       echo "running #${i}: $command"; cp -r $command; i=$((i+1))
     done
 
