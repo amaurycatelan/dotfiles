@@ -1,0 +1,6 @@
+#!/bin/sh
+# --------------------------
+
+open -a /Applications/Enpass.app/Contents/MacOS/Enpass --hide
+
+# --------------------------
