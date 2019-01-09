@@ -35,8 +35,24 @@
   // --------------------------
 
   "color_scheme": "Packages/Material Theme/schemes/Material-Theme-Palenight.tmTheme",
-  "theme": "DA.sublime-theme",
-  "skin": "DA UI/Elegant",
+  "theme": "Primer Dark.sublime-theme",
+
+  // theme primer
+  // --------------------------
+
+  "theme_primer_sidebar_font_large": true,
+  "theme_primer_sidebar_font_normal": true,
+  "theme_primer_sidebar_font_small": true,
+  "theme_primer_sidebar_font_xlarge": true,
+  "theme_primer_sidebar_tree_large": true,
+  "theme_primer_sidebar_tree_normal": true,
+  "theme_primer_sidebar_tree_small": true,
+  "theme_primer_sidebar_tree_xlarge": true,
+  "theme_primer_sidebar_tree_xsmall": true,
+  "theme_primer_tabs_font_large": true,
+  "theme_primer_tabs_font_normal": true,
+  "theme_primer_tabs_font_small": true,
+  "theme_primer_tabs_font_xlarge": true,
 
   // downloader
   // --------------------------
