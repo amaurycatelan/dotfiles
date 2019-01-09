@@ -10,7 +10,6 @@ __sublime() {
   local application="/Applications/Sublime Text.app"
   local settings="${HOME}/Library/Application Support/Sublime Text 3/Packages/User"
   local dotfiles="${HOME}/dotfiles/sublime/"
-  local copy=1
 
   local files=(
     "Preferences.sublime-settings"
@@ -28,17 +27,13 @@ __sublime() {
   # default
   # --------------------------
 
-  if [ $copy = 1 ]; then
+  local i=0
 
-    local i=0
-
-    for item in "${files[@]}"; do
-      local command=("${dotfiles}${item}" "${settings}");
-      echo "running #${i}: $command";
-      cp -r "${dotfiles}${item}" "${settings}"; i=$((i+1))
-    done
-
-  fi
+  for item in "${files[@]}"; do
+    local command=("${dotfiles}${item}" "${settings}");
+    echo "running #${i}: $command";
+    cp -r "${command[@]}"; i=$((i+1))
+  done
 
 }
 
